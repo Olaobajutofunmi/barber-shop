@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service page</title>
+    <link rel="stylesheet" href="./Service.css" />
+    <link
+      rel="stylesheet"
+      href="./fontawesome-free-5.12.1-web/css/all.min.css"/>
+</head>
+<body>
+
+    <div class="header">
+
+        
+       
+        <nav class="nav">
+            <ul class="menu">
+                <li class="logo"><a href="#">logo</a></li>
+                <li class="item"><a href="../landing page/landing page.html">Home</a></li>
+                <li class="item"><a href="../about page/about.html">About</a></li>
+                <li class="item"><a href="../Appointment page/appointment.html">Appointment</a></li>
+                  <li class="item"><a href="../Services page/Service.html">Services</a></li>
+                  <li class="item"><a href="../price page/price.html">Price</a></li>
+                <li class="item"><a href="../Blog page/blog.html">Blog</a></li>
+                <li class="item"><a href="../contact page/contact.html">Contact</a>
+                </li>
+                <li class="item"><a href="#">Language</a></li>
+                <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+              </ul>
+          </nav>
+    
+          <section class="Headings">
+            <div class="Title">
+                <h1>PROFESSIONAL SERVICES</h1> 
+                <h2>OUR BEST SERVICES THAT WE ARE OFFERING YOU</h2> 
+               
+            </div>
+         </section>
+
+
+         
+
+
+
+         <section class="Service"> 
+            <!--single skill-->
+            <article class="skill">
+            <div class="skill-icon">
+                <a href="../Hairstyles/Hairstyles.html"> <svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <rect width="200" height="200" fill="url(#pattern0)"/>
+                    <defs>
+                    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                    <use xlink:href="#image0_6_91" transform="translate(-0.00373134) scale(0.00746269)"/>
+                    </pattern>
+                    <image id="image0_6_91" width="135" height="134" xlink:href="data:image/png;base64,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"/>
+                    </defs>
+                    </svg></a>
+                    
+            </div>
+            <h4 class="Skill-title">Stylish Haircuts</h4>
+            <p class="skill-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing <br> elit. Voluptatibus, quaerat.
+            </p>
+            </article>
+            <!--end of single skill-->
+            <!--single skill-->
+            <article class="skill">
+                <div class="skill-icon">
+                    <a href="../massage page/massage.html"> <svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <rect width="200" height="200" fill="url(#pattern0)"/>
+                        <defs>
+                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                        <use xlink:href="#image0_7_4" transform="translate(0 -0.0075188) scale(0.0075188)"/>
+                        </pattern>
+                        <image id="image0_7_4" width="133" height="135" xlink:href="data:image/png;base64,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"/>
+                        </defs>
+                        </svg></a>
+                        
+                        
+                </div>
+              <h4 class="Skill-title">Body Massage</h4>
+              <p class="skill-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing <br>  elit. Voluptatibus, quaerat.
+              </p>
+              </article>
+
+              <article class="skill">
+                <div class="skill-icon">
+                    <a href="../Beards page/Beards.html"> <svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <rect width="200" height="200" fill="url(#pattern0)"/>
+                        <defs>
+                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                        <use xlink:href="#image0_7_6" transform="translate(0 -0.0113636) scale(0.00757576)"/>
+                        </pattern>
+                        <image id="image0_7_6" width="132" height="135" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIQAAACHCAYAAADX0PEJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAnxSURBVHhe7Z3Zb1TXHcfzj/StL33qS9WnqpUqVaqqSpWiLg9VU0Vd0jZKk7Q0zVJokzSBpAmChNBCUhoECQn7EvYQIGxhM0tYbIMNNmC8490e2zOn/hw4vnMmx/bMQMyc6+9IHzB3zp1jfD7nd/brB4aGhoy4Taa/2wx3NpiRtlr7d2agZ+z64BfSTchArxnuarp9f/tlk+m7ZYYGB8JpQwz2m0xPq70f+JprwbQhxvIiT/K238PY98L3FExbyJ17JYTweOArX/2GEQIkhPCQEMJDQggPCSE8JITwkBDCQ0IIDwkhPCSE8JAQwoP1DAkhxhlpOS8hRELu8g4JIRJy1eslhEjIXt0rIURCprtZQogEdmdJCDGO5iGEh4QQHhJCeEgI4SEhhIeEEB4SQnhICOEhIYSHhBAeEkJ4SAjhkenrlBAiYbSpSkKIhFzNJgkhEnI1GyWESBi9flRCiIRMb5uEEAkadgoPCSE8JITwkBDCY0YK8bWvf9s8O2ee2fXxfnPhYq1pa+swvX39pqPzlqmuuWwOHDpqXn7lDfPNb/0geH+amVFC/PTnj5hP9h0yAwODxr1yuZzpHxiwQvT195vR0eydd4wZHh42p8+cN4/PmhP8vDQyI4Sgpm/asnPsP5uxBX2rq9ts37nXPDN7rnn+pflm9botZt2GrZZ5ry2yAny4drO50dRshRkZHbVR40c/fjj4+Wki9UIQFWpq62zB0iQsXrrcrFq90bS2tttroRfXu8ak+Wjbbtt0XG24Zq813Wwxj/95djCftJBqIR761R/N9etNtjAJ/W8ve8/09PTaQidanB/rP7y7YrWNCI43Fy8zh44c99IRLYgoRAqiC5EllF8aSK0QhPfaS/W2T7Bn70ELX1PAmz/aZb77/Z8E73PQ8Vy2/AMrBkKdOnPONi30K9IsRSqFoDBp87PZrDl0+Jil3JCPWEQX7mdEQl8EsWiGppIqRvjdIKkTYtG//2drMoXmCrD+SqNtQkLpaSou110xr7z+VvB9Cv7o8SpPML7esnV3MH3MDHdcSZcQ1OjGazfsUHLlqnX27+aW1gllgAWL3rYC0dkMvQ9IQYQYGRkxH6zZZD+TpuPRJ54Npo+V7NX96RJi8ZJ3baEdO37KnDl7wRY0ESOU1lGMEMBkFn0KOqr0Q4g8G7fsCKaNFXNxbbqEOHHyjO04UouZaDp3vtr2KUJpHcUKAXv2HrDNxbqN20xbe4e5NibHDx98KJg2RnK1W9IjxM9+8Xtzs7nVFtKOXbeHiUveWRFMm08pQsx+/lXbDH1+7qIF6WY9/UIwbYwMt9elRwgKhgIiSlysvmTb+N899nQwbT6lCEE0QLiW1jazdceeoqWLBX4rYWqEcAW7e8+n45GimHBeihCAcKx9uHmJYu+LgVTNQ7iCZaiJEExMhdIV4u5bM1bAofcLOXjomG021m/abu/bf+BIMF2MSIgxXpy7wK6AUuvnL1wSTJMPQgwODtm1DvLj36F0MZJKIbZu/9gKceVqo/nO9x4Mpi2ENQxGJ8VIwVoH6WgqyE9NRoXiRgCHPzthZx4ZFj782yeDaUM4Kaj9C996J5gGwRCNTiVzEQxBWSALpY2RVAlB4SMBBcZ8AbWXqBFKOxFTSfGnp/5henv77LT4iaqzVkBELEwXK6kSAtzcABNTFOzxE6ennJgqxEkB899Y6r3HzCRRgehAswTMf+SniZnUCbHi/bW2wPZ9ethcrr9qa/CcF14Lpp0MogMbapb+d+X4td/8YZaNQMCQkylyIlH+fbGTOiFYxGLTLJNSLG5Ry1npvNulaqJM/ionn0kkeu7v84LpYyV1QgDNBQtPTCC5QmT5ulwpkIFZST6TFU+E4DPTNNx0pFIIt1RNATInwdduG12pG2XZoMtObT6LDTbLV66xUYevJ1tSj5VUCgEUFoXGSIP2ni1wSEG/4OVX3wzeU8hfnnlxfIPt9Rs37ZoFy9+MQF5f8J/gPbGTWiGAfY/d3T12AWrbzk/syIDaTQHTMWQJmw0u+aOQX/76CdsxpY9AOvjsWJV5/8MNVgTuZxSSn0+aSOUWunxYAaXwKVhq+9x/LTInT521kWOyF00Ep7hemrfQ9j+4v9ip7ZgZaa1OtxBAv6Hq9Oe2UClo1jgI+RzS2bB5u527oJ9x7kKN3W7PYR3eQwTEcTKl/UwGZOt2pV8IB4tYrk/gogCzjnX1DVYIROGADk0ML9IRXTjPUerkVqzMyF/TSIeT/gPrHXQSM5nbR/wQgWahofG6jRSPPfm34P1pJlu/Z+YJISZmuKtJQoiEoYG++ISgPWebHOGeEF8qzGBONWs5HXlUIlHOQzB0ZE6Atj9UGA4WttzIgnUHrnEf/55qD8N05FGJRCcEG1TYUV3MXodQ2r8+9087WTXZaa7pyKNSiU4IlqNZduZUVjFDQVfTOd7n1jHc4hRNQmF6oGZTw7/MPCqVqIRwB3GofdTCUJoQrEpSOG5X9WSf496j78DRvfz3JqOUPCqZqIQot9axXsH+CCaZ2OTCNRcFmJ3Mf2DIzt37bJ/gyNGT3vV8Hnn0qS9EjsnyKGfX1v0iGiHcD7zcLWvUXArHnaFwbX+5Lx5JVHiEb6I8QlvxKpUohKB2sdGFH3a5Pff8xwS4LXWu7e+81WX3TbgHj00FQ0pmNfP7DFPlcS92bU0HUQjhfqjsdL6bH6p7kAi1m7ULai/DxHJEYy8lQ9LCfRH3Mo/7QRRCvLdqvW3X2cYWer9YaPvbOzrvBH3/VepxPA7n0J8pLOR7mcf9IAohXI+dPsTdPLGFzig1NX8kcKOpueQRhduNFdpkO1EesYw2otkgc7c9dtp02vbCuQIij1vlLBbScx8PNsv/XibKI6b5iExPSxxCuB47fQn6FKE0E0GhMcnEhJY7Z+FGLYUyuKVw8sm/ng+PFCrcIzFZHvlD0Uonql+xVG6PvXB2E9z2fBfaHfc6D6IaxwJC91QiUT1jih8yTUYpPfZSh4LTkUclk6vZHI8QwGQQ29yKXTjioR5EAneoppiFK7c4VWyoLyePSmXk5um4hADXUWNzbGjiyMEDPRhBMFNIp45rPCqA2j/VwtV05FGJZPo64hPCDUPLfRUzBJyOPCqRaNYyCqHAQgtPxcBhnNBnFjIdeVQa0QohvhwkhPCQEMJDQggPCSE8JITwkBDCQ0IIDwkhPCSE8JAQwiP1z5gSpTHc2SghREK24YCEEAnm4hoJIRJS9Wsaxd0z0lYjIURCpr9LQogEzUMIDwkhPCSE8JAQwkNCCA8JITwkhPCQEMJDQggPCSE8JITwGBrolRAiYaT5rIQQCblLWyWESMhVb5AQIiHbcFBCiIRMd7OEEAkadgoPCSE8JITwkBDCQ0IIDysEfwjhkBAijyHzfzbYx7tKaU57AAAAAElFTkSuQmCC"/>
+                        </defs>
+                        </svg></a>
+                              
+                </div>
+                <h4 class="Skill-title">Beard Styling</h4>
+                <p class="skill-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing <br>  elit. Voluptatibus, quaerat.
+                </p>
+                </article>
+         </section>
+
+         <script src="./app.js"></script>
+</body>
+</html>
