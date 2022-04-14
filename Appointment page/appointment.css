@@ -1,0 +1,234 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    font-family: sans-serif;
+    font-size: 16px;
+    background:white;
+    
+ 
+   
+  }
+  .nav {
+    background:black center/cover no-repeat fixed;
+    padding: 15px 15px;
+  position: absolute; 
+    
+    z-index: 2;
+    width: 100%;
+   
+    
+    
+    
+  }
+  a {
+    color: white;
+    ;
+    text-decoration: none;
+  }
+  .menu,
+  .submenu {
+    list-style-type: none;
+  }
+  .logo {
+    font-size: 20px;
+    padding: 7.5px 10px 7.5px 0;
+  }
+  .item {
+    padding: 10px;
+  }
+  .item.button {
+    padding: 9px 5px;
+  }
+  .item:not(.button) a:hover,
+  .item a:hover::after {
+    color: gray;
+  }
+  /* Mobile menu */
+  .menu {
+    display: flex;
+    flex-flow:  wrap;
+
+    justify-content: space-between;
+    align-items: center;
+
+  }
+  .menu li a {
+    display: block;
+    padding: 15px 5px;
+    
+  }
+ 
+  .toggle {
+    order: 2;
+    font-size: 20px;
+    animation: bounce 2s ease infinite;
+
+  }
+  .item.button {
+    order: 2;
+  }
+
+  li{
+
+    font-size: 2rem;
+  }
+  .item {
+    order: 3;
+    width: 100%;
+    text-align: center;
+    display: none;
+    font-weight: 700;
+    font-style: Bold;
+    
+  }
+  .active .item {
+    display: block;
+  
+ 
+  }
+  .button.secondary {
+    /* divider between buttons and menu links */
+    border-bottom: 1px #444 solid;
+  }
+  /* Submenu up from mobile screens */
+  .submenu {
+    display: none;
+  }
+  .submenu-active .submenu {
+    display: block;
+  }
+  .has-submenu i {
+    font-size: 12px;
+  }
+  .has-submenu > a::after {
+    font-family: "Font Awesome 5 Free";
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 900;
+    content: "\f078";
+    color: white;
+    padding-left: 5px;
+  }
+  .subitem a {
+    padding: 10px 15px;
+  }
+  .submenu-active {
+    background-color: #111;
+    border-radius: 3px;
+    height: 100%;
+  }
+  
+  @keyframes bounce {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  .Title{
+      display: flex;
+      flex-direction: row;
+    gap: 4rem;
+    align-items: center;
+    
+    
+    }
+    img{
+        width: 729px        ;
+        height: 788.36px;
+
+        
+    }
+    
+    h2{
+margin-bottom: 20rem;
+            color:black;
+            align-items: center;
+            opacity: 0.9;
+        padding-left: 8rem;
+            font-size: 2.83rem;
+    }
+
+    .Name{
+display: flex;
+flex-direction: row;
+gap: 1rem;
+margin-top: -30rem;
+padding-left: 8rem;
+    }
+
+
+.Contact{
+    display: flex;
+flex-direction: row;
+gap: 1rem;
+padding-left: 8rem;
+margin-top: -1rem;
+}
+
+
+.Slot{
+    padding-left: 17rem;
+    margin-top: -1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+    input{
+        width: 287px;
+        height: 53px;
+        border: 2px solid #c4c4c4;
+        border-radius: 0.5rem;
+        color:black;
+        font-size: 18px;
+        background:  #EFEFEF;
+        text-align: center
+        ;
+    }
+
+
+    input::placeholder{
+        padding: 35px;
+         font-size: 18px;
+         font-weight: 700;
+     }
+
+.button{
+    padding-left: 17rem;
+    
+
+}
+
+     .submit-button{
+        width: 287px;
+        height: 53px;
+      margin-top: 4rem;
+      background-color: #d8bd89;
+      font-weight: 700;
+      font-size: 18px;
+      box-shadow: 5px 5px 5px #eee;
+      text-shadow: none;
+      cursor: pointer;
+      border-radius: 0.5rem;
+    }
+    
+    .submit-button:hover{
+        background-color:#D69E32;
+     }

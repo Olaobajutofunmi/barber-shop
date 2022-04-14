@@ -1,0 +1,227 @@
+:root{
+    --transition: all 0.3s linear;
+}
+
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    font-family: sans-serif;
+    font-size: 16px;
+    background:white;
+    
+ 
+   
+  }
+  .nav {
+    background:black center/cover no-repeat fixed;
+    padding: 15px 15px;
+  position: absolute; 
+    z-index: 3;
+    width: 100%;
+   
+    
+    
+    
+  }
+  a {
+    color: white;
+    ;
+    text-decoration: none;
+  }
+  .menu,
+  .submenu {
+    list-style-type: none;
+  }
+  .logo {
+    font-size: 20px;
+    padding: 7.5px 10px 7.5px 0;
+  }
+  .item {
+    padding: 10px;
+  }
+  .item.button {
+    padding: 9px 5px;
+  }
+  .item:not(.button) a:hover,
+  .item a:hover::after {
+    color: gray;
+  }
+  /* Mobile menu */
+  .menu {
+    display: flex;
+    flex-flow:  wrap;
+
+    justify-content: space-between;
+    align-items: center;
+
+  }
+  .menu li a {
+    display: block;
+    padding: 15px 5px;
+    
+  }
+ 
+  .toggle {
+    order: 2;
+    font-size: 20px;
+    animation: bounce 2s ease infinite;
+
+  }
+  .item.button {
+    order: 2;
+  }
+
+  li{
+
+    font-size: 2rem;
+  }
+  .item {
+    order: 3;
+    width: 100%;
+    text-align: center;
+    display: none;
+    font-weight: 700;
+    font-style: Bold;
+    
+  }
+  .active .item {
+    display: block;
+  
+ 
+  }
+  .button.secondary {
+    /* divider between buttons and menu links */
+    border-bottom: 1px #444 solid;
+  }
+  /* Submenu up from mobile screens */
+  .submenu {
+    display: none;
+  }
+  .submenu-active .submenu {
+    display: block;
+  }
+  .has-submenu i {
+    font-size: 12px;
+  }
+  .has-submenu > a::after {
+    font-family: "Font Awesome 5 Free";
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 900;
+    content: "\f078";
+    color: white;
+    padding-left: 5px;
+  }
+  .subitem a {
+    padding: 10px 15px;
+  }
+  .submenu-active {
+    background-color: #111;
+    border-radius: 3px;
+    height: 100%;
+  }
+  
+  @keyframes bounce {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  .Headings{
+     padding-top: 10rem;
+   display: flex;
+   flex-direction: row;
+   gap: 15rem;
+     align-items: center;
+     padding-left:  130px;
+  }
+
+
+h1{
+    font-family: Roboto;
+font-size: 24px;
+font-weight: 500;
+line-height: 28px;
+letter-spacing: 0em;
+text-align: center;
+padding-bottom: 3rem;
+
+}
+
+
+h2{
+    font-family: Roboto;
+font-size: 52px;
+font-weight: 700;
+line-height: 64px;
+letter-spacing: 0em;
+text-align: center;
+padding-bottom: 3rem;
+
+}
+
+p{
+    font-family: Roboto;
+font-size: 28px;
+font-weight: 400;
+line-height: 33px;
+letter-spacing: 0em;
+text-align: center;
+padding-bottom: 3rem;
+
+}
+
+
+  img{
+      height: 540px;
+      padding-top: 0;
+      margin-top: -30rem;
+      position: absolute;
+  z-index: 2; 
+ 
+ 
+
+  }
+
+  .Signature{
+      padding-left: 16rem;
+
+    
+  }
+
+  .container{
+      position: relative;
+  }
+
+  .orange-box{
+      margin-left: -4rem;
+    position: relative;
+    z-index: 1;
+    background-color: black;
+    height: 540px;
+    width: 380px;
+      padding-top: 1rem;
+  }
+
+  .white-box{
+    margin-top: -32rem;
+    border: 2px solid white;
+    margin-left: -2rem;
+    position: absolute;
+    z-index: 1;
+  
+    height: 540px;
+    width: 380px;
+
+  }
