@@ -8,8 +8,7 @@
     font-size: 16px;
     background:white;
     
- 
-   
+    
   }
   .nav {
     background: center/cover no-repeat fixed;
@@ -19,9 +18,8 @@
     z-index: 2;
     width: 100%;
    
-    
-    
-    
+   
+      
   }
   a {
     color: white;
