@@ -9,7 +9,1142 @@
   --ff-secondary: "Grand Hotel";
   --transition: all 0.3s linear;
   --spacing: 0.25rem;
-  --radius: 0.5rem;
+  --radius: 0.5:root{
+  --transition: all 0.3s linear;
+}
+
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+  background:white;
+  
+
+ 
+}
+.nav {
+  
+  padding: 15px 15px;
+position: absolute; 
+  z-index: 3;
+  width: 100%;
+
+  
+  
+  
+}
+a {
+  color: white;
+  ;
+  text-decoration: none;
+}
+.menu,
+.submenu {
+  list-style-type: none;
+}
+.logo {
+  font-size: 20px;
+  padding: 7.5px 10px 7.5px 0;
+}
+.item {
+  padding: 10px;
+}
+.item.button {
+  padding: 9px 5px;
+}
+.item:not(.button) a:hover,
+.item a:hover::after {
+  color: gray;
+}
+/* Mobile menu */
+.menu {
+  display: flex;
+  flex-flow:  wrap;
+
+  justify-content: space-between;
+  align-items: center;
+
+}
+.menu li a {
+  display: block;
+  padding: 15px 5px;
+  
+}
+
+.toggle {
+  order: 2;
+  font-size: 20px;
+  animation: bounce 2s ease infinite;
+
+}
+.item.button {
+  order: 2;
+}
+
+li{
+
+  font-size: 2rem;
+}
+.item {
+  order: 3;
+  width: 100%;
+  text-align: center;
+  display: none;
+  font-weight: 700;
+  font-style: Bold;
+  
+}
+.active .item {
+  display: block;
+
+
+}
+.button.secondary {
+  /* divider between buttons and menu links */
+  border-bottom: 1px #444 solid;
+}
+/* Submenu up from mobile screens */
+.submenu {
+  display: none;
+}
+.submenu-active .submenu {
+  display: block;
+}
+.has-submenu i {
+  font-size: 12px;
+}
+.has-submenu > a::after {
+  font-family: "Font Awesome 5 Free";
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 900;
+  content: "\f078";
+  color: white;
+  padding-left: 5px;
+}
+.subitem a {
+  padding: 10px 15px;
+}
+.submenu-active {
+  background-color: #111;
+  border-radius: 3px;
+  height: 100%;
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+  .mini-nav{
+    display: flex;
+    flex-direction: row;
+    margin-left: 63rem;
+    font-size: smaller;
+  }
+
+  .mini-nav:hover{
+color: red;
+  }
+
+  .Home{
+    font-size: 1.5rem;
+    margin-right: 1rem;
+  }
+
+  .LOGIN{
+    font-size: 1.5rem;
+    margin-right: 1rem;
+  }
+
+  .SIGN-UP{
+    font-size: 1.5rem;
+    margin-right: 1rem;
+  }
+
+
+  @keyframes bounce {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+
+  .banner{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.banner h2{
+    font-family: (var(--ff-secondary));
+    color: black;
+    /* animation*/
+
+}
+.banner h1{
+    text-transform: uppercase;
+    color: var(--clr--white);
+    margin-top: 1.20rem;
+    margin-bottom: 2rem;
+  font-size: 5rem;
+    /* animation */
+}
+ .banner-btn{
+  border: 0.125rem solid #fcb900;
+  border-radius: 0.3rem;
+  background: #fcb900;
+    outline-offset: 0.25rem;
+    font-size: 1.25rem;
+padding: 1rem 1.75rem;
+color: #111;
+font-weight: 600;
+ }
+ /*content-divider*/
+ .content-divider{
+     height: 0.5rem;
+     background: linear-gradient(to left,
+     var(--clr-grey-1),
+     #1e83cf,
+     var(--clr-grey-1));
+ }
+
+  h1{
+      color: white;
+      position: relative;
+      align-items: center;
+      opacity: 0.5;
+  }
+
+
+
+
+  
+ .header{
+     position: relative;
+     min-height: 100vh;
+    
+         overflow-x: hidden;
+ }
+
+ .Headings{
+     position: relative;
+     z-index: 1;
+     top: 200px;
+     font-weight: 500;
+     font-size: 30px;
+     text-align: center;
+     padding-left: 200px;
+     padding-top: 30px;
+
+ }
+ 
+
+ 
+ #myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 10px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+ background: none;
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+ 
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+    .footer{
+      align-items: center;
+      background-color: #111;
+      
+    }
+    
+    .footer-things{
+      display: flex;
+      flex-direction: row;
+      gap: 14rem;
+    margin-top: 2rem;
+      padding-left: 5rem;
+      padding-top: 2rem;
+color: white;
+
+
+
+
+    }
+    .social-icons{
+      display: flex;
+      flex-direction: row;
+      gap: 2rem;
+      padding-top: 1rem;
+    }
+
+.gender{
+  display: flex;
+      flex-direction: row;
+      gap: 1rem;
+      height: 3rem;
+      margin-top: 1.3rem;
+     
+}
+
+.sex-M{
+  width: 7rem;
+background-color: black;
+color: white;
+border: 2px solid  white;
+border-radius: 0.5rem;
+}
+
+.sex-F{
+  width: 7rem;
+background-color: black;
+color: white;
+border: 2px solid  white;
+border-radius: 0.5rem;
+}
+    
+    .form{
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
+      
+    }
+    .Email {
+      display: flex;
+  flex-direction: row;
+
+  gap: 0.9rem;
+      margin-top: 1.3rem;
+        border: 2px solid #c4c4c4;
+      width: 420px;
+      height: 3rem;
+    border-radius: 0.5rem;
+    background-color: white;
+    }
+
+
+    input {
+        border: none;
+        width: 420px;
+      }
+      input:focus {
+        outline: none;
+      }
+.Envelope{
+  margin-top: 0.7rem;
+  padding-left: 1rem;
+}
+    .New{
+      font-weight: 700;
+      padding-bottom: 1rem;
+    }
+
+
+    .Join{
+      font-weight: 700;
+      padding-left: 3rem;
+      
+    }
+
+
+
+    #slider {
+      position: relative;
+      width: 1550px;
+      height: 90vh;
+     
+      overflow: hidden;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    }
+    #slider ul {
+      position: relative;
+      list-style: none;
+      height: 100%;
+      width: 10000%;
+      padding: 0;
+      margin: 0;
+      transition: all 750ms ease;
+      left: 0;
+    }
+    #slider ul li {
+      position: relative;
+      height: 100%;
+     
+      float: left;
+    }
+    #slider ul li img{
+      width: 1550px;
+      height: 90vh;
+    
+    }
+     
+    #slider #prev, #slider #next {
+      width: 50px;
+      line-height: 50px;
+      border-radius: 50%;
+      font-size: 2rem;
+      text-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+      text-align: center;
+      color: white;
+      text-decoration: none;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      transition: all 150ms ease;
+    }
+    #slider #prev:hover, #slider #next:hover {
+      background-color: rgba(0, 0, 0, 0.5);
+      text-shadow: 0;
+    }
+    #slider #prev {
+      left: 10px;
+    }
+    #slider #next {
+      right: 28px;
+    }
+
+
+
+
+    * {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+.Services{
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  padding-left: 10rem;
+  background:
+  url("./Images/coconut.jpg") center/cover no-repeat fixed;
+  /* position: relative; */
+  /* animation */
+  overflow-x: hidden; 
+  margin-top: -4.5rem;
+  
+}
+
+h3{
+ color: white;
+ font-weight: 200;
+}
+
+h4{
+  font-size: 3rem;
+  font-weight: 700;
+  padding-top: 1rem;
+}
+
+.Section-1{
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  padding-top: 2rem;
+}
+.Section-2{
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  padding-top: 2rem;
+}
+.Section-3{
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+  padding-top: 3rem;
+}
+
+.Hair-cuts{
+  display: flex;
+  flex-direction: row;
+}
+
+.Hair-cuts img{
+  border-radius: 60px;
+}
+
+.Pedicure{
+  display: flex;
+  flex-direction: row;
+}
+
+.Pedicure img{
+  border-radius: 60px;
+}
+
+
+.Nail{
+  display: flex;
+  flex-direction: row;
+}
+
+.Nail img{
+  border-radius: 60px;
+}
+
+.SPA{
+  display: flex;
+  flex-direction: row;
+}
+
+.SPA img{
+  border-radius: 60px;
+}
+
+.Facials{
+  display: flex;
+  flex-direction: row;
+}
+
+.Facials img{
+  border-radius: 60px;
+}
+.Haircolour{
+  display: flex;
+  flex-direction: row;
+}
+
+.Haircolour img{
+  border-radius: 60px;
+}
+
+.Special-Services{
+  padding-top: 4rem;
+  text-align: center;
+}
+
+.slide-show{
+margin-top: 6rem;
+padding-left: 1rem;
+padding-right: 1rem;
+height: 500px;
+  background-color: #1e83cf;
+}
+
+h2{
+  font-size: 3rem;
+  font-weight: 500;
+   margin-top: 4rem;
+   color: white;
+}
+
+.Book-Appointment{
+  text-align: center;
+  background:
+  url("./Images/coconut.jpg") center/cover no-repeat fixed;
+  /* position: relative; */
+  /* animation */
+ 
+  overflow: hidden;
+ margin-top: -2rem;
+  padding-bottom: 10rem;
+  
+
+}
+
+.appointment-btn{
+  border: 0.125rem solid yellow;
+    outline-offset: 0.25rem;
+    font-size: 1.25rem;
+padding: 1rem 1.75rem;
+background-color: red;
+margin-top: -3rem;
+border-radius: 0.5rem;
+}
+
+.button{
+  margin-top: 2rem;
+}
+.logo2{
+  padding-top: 11rem;
+}
+
+.Team{
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;background:
+  url("./Images/cut2.jpg") center/cover no-repeat fixed;
+  /* position: relative; */
+  /* animation */
+ 
+  overflow: hidden;
+  padding-bottom: 4rem;
+
+}
+
+.em-sec-1{
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+}
+
+.location-branches{
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.Team{
+  padding-left: 3rem;
+  padding-top: 6rem;
+  text-align: center;
+}
+
+.em-sec-1{
+  padding-left: 2rem;
+  
+}
+
+.Text{
+  padding-left: 8rem;
+}
+
+.Text p{
+  color: white;
+}
+.em-txt h2{
+color: white;
+  font-weight: 700;
+ text-align: center;
+ font-size: 1rem;
+ margin-top: 0rem;
+}
+.br{
+  margin-left: -8rem;
+}
+.Branches{
+  text-align: center;
+}
+
+.Branches p{
+color: white;
+}
+
+.Branches h2{
+  font-weight: 800;
+  color: white;
+}
+
+
+.location-branches h2{
+font-weight: 800;
+font-size: 2rem;
+text-align: center;
+color: white;
+}
+
+.Contact{
+  background:
+  url("./Images/cut.jfif") center/cover no-repeat fixed;
+  /* position: relative; */
+  /* animation */
+ 
+  overflow: hidden;
+  padding-bottom: 15rem;
+}
+
+.Contact-border{
+  display: flex;
+  flex-direction: row;
+  gap: 10rem;
+  text-align: justify;
+background-color: black;
+margin-top: 15rem;
+padding-left: 6rem;
+margin-left: 4rem;
+margin-right: 4rem;
+padding-bottom: 2rem;
+}
+
+.Text-1 p{
+color: white;
+}
+
+.phone{
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+.SVG{
+  margin-top: 7rem;
+}
+
+.E-mail{
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.Location{
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+.opening-hrs{
+  box-sizing: border-box;
+  box-shadow: 0 8px 16px rgb(115, 114, 114);
+background-color: white;
+  display: inline-block;
+  margin-top: 15rem;
+  margin-left: 10rem;
+  text-align: center;
+  padding-top: 1.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.contact-us{
+  box-sizing: border-box;
+  box-shadow: 0 8px 16px rgb(115, 114, 114);
+background-color: white;
+  display: inline-block;
+  margin-top: 20rem;
+  margin-left: 10rem;
+  text-align: center;
+  padding-top: 1.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-bottom: 1.5rem;
+  
+}
+
+.opening-works{
+  background:
+  url("./Images/barb.jfif") center/cover no-repeat fixed;
+  /* position: relative; */
+  /* animation */
+ 
+  overflow: hidden;
+  padding-bottom: 15rem;
+}
+
+.days-time{
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: row;
+  gap: 25rem;
+}
+
+.contacts{
+  padding-top: 4.5rem;
+  display: flex;
+  flex-direction: row;
+  gap: 20rem;
+}
+.opening-hrs h2{
+  color: black;
+  padding-top: -8rem;
+  margin-top: 0rem;
+}
+.contact-us h2{
+  color: black;
+  padding-top: -8rem;
+  margin-top: 0rem;
+}
+
+.Review h2{
+  color: black;
+}
+
+.Review{
+  text-align: center;
+  
+}
+
+.Review-box{
+  box-sizing: border-box;
+  box-shadow: 0 8px 16px rgb(115, 114, 114);
+background-color: white;
+  display: inline-block;
+  margin-top: 3rem;
+  padding-top: 2.5rem;
+  padding-left: 20rem;
+  padding-right: 20rem;
+  padding-bottom: 7rem;
+
+}
+
+hr{
+  width: 150px;
+  align-items: center;
+  margin-left: 43rem;
+  margin-top: 0.3rem;
+}
+
+.Review-box img{
+  border-radius: 5rem;
+  margin-top: 2rem;
+}
+
+.Review-box h1{
+  color: black;
+  padding-bottom: 2rem;
+}
+
+.review-btn{
+  border: 0.125rem solid black;
+  outline-offset: 0.25rem;
+  font-size: 1.25rem;
+padding: 1rem 1.75rem;
+background-color: white;
+color: black;
+text-align: center;
+
+}
+.button{
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+.loginbtn {
+  background-color: black;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: 50px;
+  padding: 10px 18px;
+  margin-top: -2rem;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  height: 50%;
+  border-radius: 60%;
+}
+
+.containers {
+  padding: 50px;
+}
+
+span.forgot {
+  float: right;
+  margin-top: -3rem;
+cursor: pointer;
+  color: white;
+}
+
+span.forgot:hover{
+  color: red;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+
+
+
+
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for all buttons */
+.Signup-btn {
+  background-color: black;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* The Modal (background) */
+.modals {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d;
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modals-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+ 
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}rem;
 }
 * {
     box-sizing: border-box;
